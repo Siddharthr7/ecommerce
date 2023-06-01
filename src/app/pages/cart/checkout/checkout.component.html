@@ -1,0 +1,104 @@
+<br><br>
+
+<form  [formGroup]="registerForm" (ngSubmit)="registerSubmited()" class="border p-3 rounded-3 ">
+    <div class="row g-0">
+        <div class="col text-center p-2 mb-3 bg-light">
+            <span class="fs-3">Register</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="firstname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstname" formControlName="firstname">
+        </div>
+        <div class="col mb-3">
+            <label for="lastname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastname" formControlName="lastname">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="Address" class="form-label">Address</label>
+            <input type="Address" class="form-control" id="Address" formControlName="Address">
+            <div class="form-text"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" formControlName="email">
+            <div class="form-text"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="mobile" class="form-label">Mobile Number</label>
+            <input type="text" class="form-control" id="mobile" formControlName="mobile">
+            <div class="form-text"></div>
+        </div>
+        <div class="col ps-3 mb-3">
+            <div class="m-1">Gender</div>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="male" value="m" formControlName="gender">
+                <label for="male" class="form-check-label">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="female" value="f" formControlName="gender">
+                <label for="female" class="form-check-label">Female</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="pwd" class="form-label">Password</label>
+            <input type="password" class="form-control" id="pwd" formControlName="pwd">
+            <div class="form-text"></div>
+        </div>
+        <div class="col mb-3">
+            <label for="rpwd" class="form-label">Repeat Password</label>
+            <input type="password" class="form-control" id="rpwd" formControlName="rpwd">
+            <div class="form-text"></div>
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col mb-3">
+            <label for="cardnumber" class="form-label">Card Number</label>
+            
+            <input id="cardnumber" type="text" placeholder="16 Digit Card Number" pattern="[0-9]*" inputmode="numeric" class="form-control" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="expirationdate">Expiration (mm/yy)</label>
+            <input id="expirationdate" type="text" pattern="[0-9]*" inputmode="numeric" class="form-control">
+        </div>
+        <div class="col mb-3">
+            <label for="securitycode">Security Code</label>
+            <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric" class="form-control">
+        </div>
+    </div> -->
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="d-grid">
+                <button type="submit" mat-raised-button>Submit</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col mb2">
+            
+        </div>
+        <div class="col">
+            
+            
+        </div>
+        <div class="field-container">
+           
+        </div>
+        <div class="field-container">
+            
+        </div>
+    </div>
+    </form>
+    
